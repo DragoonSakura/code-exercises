@@ -16,7 +16,7 @@
 include "wks_deps.lua"
 
 workspace "CodeExercises"
-    location ".."
+    location "."
     architecture "x64"
 
     configurations {
@@ -90,10 +90,10 @@ newaction {
         os.rmdir("bin-int")
 
         print("==== Removing Makefile ====")
-        -- os.remove("")
+        os.remove("./ExerciseEngine.make")
 
         print("==== Removing base Makefile ====")
-        -- os.remove("Makefile")
+        os.remove("Makefile")
 
     end
 }

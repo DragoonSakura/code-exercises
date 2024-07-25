@@ -28,8 +28,8 @@ project "ExerciseEngine"
          "src/**.cpp"
     }
 
-    pchheader "lesson_pch.h"
-    pchsource "src/lesson_pch.cpp"
+    -- pchheader "lesson_pch.h"
+    -- pchsource "src/lesson_pch.cpp"
 
     includedirs {
         "src",

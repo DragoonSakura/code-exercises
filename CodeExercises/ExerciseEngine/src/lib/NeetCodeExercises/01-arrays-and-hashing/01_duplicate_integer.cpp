@@ -31,13 +31,3 @@ bool hasDuplicate(std::vector<int>& nums) {
 
     return has_repeat;
 }
-
-int main() {
-
-    std::vector<int> test_vec1 = { 1, 3, 2, 6, 11, 3, 5, 4};
-    std::vector<int> test_vec2 = { 1, 3, 2, 6, 11, 9, 5, 4};
-
-    printf("Test 1: %s\n", hasDuplicate(test_vec1) ? "passed" : "failed");
-    printf("Test 2: %s\n", !hasDuplicate(test_vec2) ? "passed" : "failed");
-
-}

@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/LessonHub.o",
+      "ExerciseEngine/src/lib/Core/LessonHub.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/LessonHub.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/LessonHub.o"
+  }
+]

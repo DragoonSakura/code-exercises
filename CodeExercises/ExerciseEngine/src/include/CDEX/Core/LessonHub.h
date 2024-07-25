@@ -5,7 +5,6 @@
 #pragma once
 
 // External Includes
-#include <vector>
 
 // Internal Includes
 
@@ -18,41 +17,39 @@
 // ==========================
 
 /*
-* @class A class for a single interactive menu
-*
-* A menu lists options avaialable.
-* It accepts input from the user and then directs them
-* to another menu or passes a task to be performed.
+* @class Main class to handle the lesson engine
 */
-class Menu {
+class LessonHub {
 
     // ================
     // Member Variables
     // ================
-private:
-    std::vector<Menu> menu_options;
+
+    
 
     // ==============================
     // Constructor/Destructor Methods
     // ==============================
 
+public:
+
     // ==== Constructor ====
 
     /*
-    * @brief Constructor for Menu
+    * @brief Constructor for LessonHub
     *
     * @param
     */
-    Menu();
+    LessonHub();
 
     // ==== Destructor ====
 
     /*
-    * @brief Constructor for Menu
+    * @brief Constructor for LessonHub
     *
     * @param
     */
-    ~Menu();
+    ~LessonHub();
 
 };
 
