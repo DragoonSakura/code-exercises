@@ -1,0 +1,11 @@
+Category: Arrays and Hashes
+Difficulty: Easy
+
+Explanation:
+- We want to Look through the "nums" array
+- We want to track the numbers that occur (use unordered list)
+- Every number we see in "nums" array is added to tracking list
+- If we are adding number already in tracking list we have duplicate
+    * return false
+- If we go through whole array without repeat then no duplicate
+    * return true
