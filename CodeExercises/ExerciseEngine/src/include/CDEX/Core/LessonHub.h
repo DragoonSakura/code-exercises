@@ -5,8 +5,10 @@
 #pragma once
 
 // External Includes
+#include <vector>
 
 // Internal Includes
+#include "CDEX/Core/Menu.h"
 
 // =====================
 // SECTION END: Includes
@@ -25,7 +27,7 @@ class LessonHub {
     // Member Variables
     // ================
 
-    
+    std::vector<Menu> menu_options;
 
     // ==============================
     // Constructor/Destructor Methods
