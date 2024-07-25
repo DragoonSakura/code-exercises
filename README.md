@@ -15,3 +15,23 @@ ___
  Various exercises to practice general code problems as well as specific topics.
 
  **Note:** For specific exercise section see README.md in relevant directory.
+
+## Index
+
+- Directories
+    - [General](#directories-general)
+    - [Exercises](#directories-exercises)
+
+## Directories
+
+### Directories: General
+
+- **Notes:** Simple notes to document minor learnings and reminders
+
+[(Return to Inden)](#index)
+
+### Directories: Exercises
+
+- **NeetCodeExericses:** Exercises from the Neet Code website
+
+[(Return to Inden)](#index)

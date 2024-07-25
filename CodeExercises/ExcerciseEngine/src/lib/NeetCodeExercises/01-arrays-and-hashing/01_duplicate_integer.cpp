@@ -2,13 +2,22 @@
 #include <unordered_set>
 #include <vector>
 
-bool hasDuplicate(std::vector<int> nums) {
+/**
+*
+* @brief Checks if a vector of integers hes duplicate entries
+*
+* @params nums => The int vector to search
+*
+* @returns true => has duplicate, false => no duplicates
+*
+*/
+bool hasDuplicate(std::vector<int>& nums) {
 
     bool has_repeat = false;
 
-    // Self Note start
+    // SELF NOTE START
     // Original solution involved unordered maps
-    // Self Note end
+    // SELF NOTE END
     std::unordered_set<int> occurred_nums;
 
     for ( int i = 0; i < nums.size(); i++ ) {
