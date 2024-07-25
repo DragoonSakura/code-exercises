@@ -18,7 +18,7 @@
 // ==========================
 
 /*
-* @class An interface class for items linked to menus
+* @class An inhertiable base class for items linked to menus
 *
 * Includes:
 * - Menu
@@ -44,7 +44,7 @@ public:
     *
     * @param
     */
-    HubItem(std::string initial_name) : name(initial_name) {}
+    HubItem(std::string initial_name);
 
     // ==== Destructor ====
 
@@ -54,6 +54,12 @@ public:
     * @param
     */
     virtual ~HubItem() = 0;
+
+    // =============
+    // Other Methods
+    // =============
+
+    std::string getName();
 
 };
 

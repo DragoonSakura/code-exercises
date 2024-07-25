@@ -5,7 +5,6 @@
 #pragma once
 
 // External Includes
-#include <string>
 #include <vector>
 
 // Internal Includes
@@ -32,12 +31,13 @@ class Menu : public HubItem {
     // Member Variables
     // ================
 private:
-    std::string name;
-    std::vector<Menu> menu_options;
+    std::vector<HubItem> menu_options;
 
     // ==============================
     // Constructor/Destructor Methods
     // ==============================
+
+public:
 
     // ==== Constructor ====
 
@@ -46,7 +46,7 @@ private:
     *
     * @param
     */
-    Menu();
+    Menu(std::string initial_name);
 
     // ==== Destructor ====
 
@@ -64,11 +64,22 @@ private:
     /*
     * @brief Add an option to the menu
     * 
-    * @param item ItemDes_c
+    * @param new_item The new HubItem being add to options
     *
-    * @return ClassReturn
+    * @return void
     */
-    void addOption();
+    void addOption(HubItem& new_item);
+
+    // =============
+    // Other Methods
+    // =============
+
+    /*
+    * @brief List all the menu options with input number
+    *
+    * @return void (prints to console)
+    */
+    void showMenu();
 
 };
 
