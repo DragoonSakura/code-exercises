@@ -5,9 +5,11 @@
 #pragma once
 
 // External Includes
+#include <string>
 #include <vector>
 
 // Internal Includes
+#include "CDEX/Core/HubItem.h"
 
 // =====================
 // SECTION END: Includes
@@ -24,12 +26,13 @@
 * It accepts input from the user and then directs them
 * to another menu or passes a task to be performed.
 */
-class Menu {
+class Menu : public HubItem {
 
     // ================
     // Member Variables
     // ================
 private:
+    std::string name;
     std::vector<Menu> menu_options;
 
     // ==============================

@@ -5,10 +5,9 @@
 #pragma once
 
 // External Includes
-#include <vector>
+#include <string>
 
 // Internal Includes
-#include "CDEX/Core/Menu.h"
 
 // =====================
 // SECTION END: Includes
@@ -19,15 +18,18 @@
 // ==========================
 
 /*
-* @class Main class to handle the lesson engine
+* @class An interface class for items linked to menus
+*
+* Includes:
+* - Menu
 */
-class LessonHub {
+class HubItem {
 
     // ================
     // Member Variables
     // ================
 
-    std::vector<Menu> menu_options;
+    std::string name;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -38,33 +40,20 @@ public:
     // ==== Constructor ====
 
     /*
-    * @brief Constructor for LessonHub
+    * @brief Constructor for HubItem
     *
     * @param
     */
-    LessonHub();
+    HubItem(std::string initial_name) : name(initial_name) {}
 
     // ==== Destructor ====
 
     /*
-    * @brief Constructor for LessonHub
+    * @brief Constructor for HubItem
     *
     * @param
     */
-    ~LessonHub();
-
-    // =====================
-    // Getter/Setter Methods
-    // =====================
-
-    /*
-    * @brief Adds a menu to the lesson hub
-    * 
-    * @param new_menu The menu to be added
-    *
-    * @return void
-    */
-    void addMenu();
+    virtual ~HubItem() = 0;
 
 };
 
