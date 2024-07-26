@@ -25,7 +25,8 @@ class LessonFile : public HubItem {
     // ================
     // Member Variables
     // ================
-    
+
+    std::string files_dir;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -48,6 +49,12 @@ class LessonFile : public HubItem {
     * @param
     */
     ~LessonFile();
+
+    // =============
+    // Other Methods
+    // =============
+
+    void run();
 
 };
 

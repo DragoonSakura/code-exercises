@@ -81,6 +81,8 @@ all: prebuild prelink $(TARGET)
 endif
 
 OBJECTS := \
+	$(OBJDIR)/HubItem.o \
+	$(OBJDIR)/LessonFile.o \
 	$(OBJDIR)/LessonHub.o \
 	$(OBJDIR)/Menu.o \
 	$(OBJDIR)/Solution.o \
@@ -144,6 +146,12 @@ else
 $(OBJECTS): | $(OBJDIR)
 endif
 
+$(OBJDIR)/HubItem.o: ExerciseEngine/src/lib/Core/HubItem.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/LessonFile.o: ExerciseEngine/src/lib/Core/LessonFile.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/LessonHub.o: ExerciseEngine/src/lib/Core/LessonHub.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"

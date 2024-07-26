@@ -7,6 +7,7 @@
 // Internal Includes
 #include "CDEX/Core/Menu.h"
 #include "CDEX/Core/HubItem.h"
+#include <cstdio>
 
 // =====================
 // SECTION END: Includes
@@ -29,12 +30,20 @@ Menu::Menu(std::string initial_name) : HubItem(initial_name) {}
 
 Menu::~Menu() {}
 
+// =====================
+// Getter/Setter Methods
+// =====================
+
+void Menu::addOption(HubItem& new_item) {
+    menu_options.push_back(std::move(new_item));
+}
+
 // =============
 // Other Methods
 // =============
 
-void Menu::addOption(HubItem& new_item) {
-    menu_options.push_back(std::move(new_item));
+void Menu::run() {
+    
 }
 
 void Menu::showMenu() {
@@ -43,6 +52,15 @@ void Menu::showMenu() {
         option_name = this->menu_options[index].getName();
         // We add to index to start options from number 1 onwards
         printf("%d: %s", (index+1), option_name.c_str());
+    }
+}
+
+void Menu::runOption(int choice) {
+    if (choice < this->menu_options.size()) {
+        printf("%d is not an available option", choice);
+    }
+    else {
+        this->menu_options[choice].run();
     }
 }
 

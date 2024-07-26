@@ -74,12 +74,17 @@ public:
     // Other Methods
     // =============
 
+    void run();
+
     /*
     * @brief List all the menu options with input number
     *
     * @return void (prints to console)
     */
     void showMenu();
+
+
+    void runOption(int choice);
 
 };
 

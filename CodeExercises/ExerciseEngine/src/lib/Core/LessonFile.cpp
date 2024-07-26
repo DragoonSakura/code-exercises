@@ -29,6 +29,13 @@ LessonFile::LessonFile(std::string initial_name) : HubItem(initial_name) {}
 
 LessonFile::~LessonFile() {}
 
+// =============
+// Other Methods
+// =============
+
+void LessonFile::run() {
+
+}
 
 // ==== SECTION END: (CLASS) LessonFile ====
 

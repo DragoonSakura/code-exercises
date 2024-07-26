@@ -6,6 +6,8 @@
 
 // Internal Includes
 #include "CDEX/Core/LessonHub.h"
+#include "CDEX/Core/Menu.h"
+#include <cstdio>
 
 // =====================
 // SECTION END: Includes
@@ -22,12 +24,21 @@
 // ==============================
 
 // ==== Constructor ====
-LessonHub::LessonHub() {}
+LessonHub::LessonHub() {
+    this->initial_menu = new Menu("Start Menu");
+}
 
 // ==== Destructor ====
 
 LessonHub::~LessonHub() {}
 
+// =============
+// Other Methods
+// =============
+
+void LessonHub::run() {
+    printf("Initial Lesson Name: %s\n", this->initial_menu->getName().c_str());
+}
 
 // ==== SECTION END: (CLASS) LessonHub ====
 

@@ -53,13 +53,19 @@ public:
     *
     * @param
     */
-    virtual ~HubItem() = 0;
+    virtual ~HubItem() = default;
+
+    // =====================
+    // Getter/Setter Methods
+    // =====================
+
+    std::string getName();
 
     // =============
     // Other Methods
     // =============
-
-    std::string getName();
+    
+    virtual void run() {}
 
 };
 
