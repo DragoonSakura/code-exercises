@@ -6,14 +6,19 @@
 # Directories
 #------------
 .cache
+bin
+bin-int
 
 #------
 # Files
 #------
+Makefile
+compile_commands.json
 
 #-----------------
 # Files Extensions
 #-----------------
+.make
 
 #--------------------------------------
 # SECTION END: git ignore for workspace

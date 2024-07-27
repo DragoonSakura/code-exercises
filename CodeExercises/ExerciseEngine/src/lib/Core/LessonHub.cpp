@@ -7,7 +7,6 @@
 // Internal Includes
 #include "CDEX/Core/LessonHub.h"
 #include "CDEX/Core/Menu.h"
-#include <cstdio>
 
 // =====================
 // SECTION END: Includes
@@ -37,7 +36,9 @@ LessonHub::~LessonHub() {}
 // =============
 
 void LessonHub::run() {
-    printf("Initial Lesson Name: %s\n", this->initial_menu->getName().c_str());
+
+    this->initial_menu->run();
+
 }
 
 // ==== SECTION END: (CLASS) LessonHub ====

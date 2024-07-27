@@ -6,7 +6,7 @@
 
 // Internal Includes
 #include "CDEX/Core/HubItem.h"
-#include "CDEX/Core/LessonFile.h"
+#include "CDEX/Core/ExitItem.h"
 
 // =====================
 // SECTION END: Includes
@@ -16,28 +16,41 @@
 // SECTION START: START CLASS
 // ==========================
 
-// ==== SECTION START: (CLASS) LessonFile ====
+// ==== SECTION START: (CLASS) ExitItem ====
 
 // ==============================
 // Constructor/Destructor Methods
 // ==============================
 
 // ==== Constructor ====
-LessonFile::LessonFile(std::string initial_name) : HubItem(initial_name) {}
+ExitItem::ExitItem(std::string initial_name) : HubItem(initial_name), m_is_running(true) {}
 
 // ==== Destructor ====
 
-LessonFile::~LessonFile() {}
+ExitItem::~ExitItem() {}
+
+// =====================
+// Getter/Setter Methods
+// =====================
+
+bool ExitItem::getRunStatus() {
+    return this->m_is_running;
+}
+
+void ExitItem::setRunStatus(bool new_status) {
+    this->m_is_running = false;
+}
 
 // =============
 // Other Methods
 // =============
 
-void LessonFile::run() {
-
+void ExitItem::run() {
+    printf("LessonHub is now exiting");
+    this->setRunStatus(false);
 }
 
-// ==== SECTION END: (CLASS) LessonFile ====
+// ==== SECTION END: (CLASS) ExitItem ====
 
 // ========================
 // SECTION START: END CLASS

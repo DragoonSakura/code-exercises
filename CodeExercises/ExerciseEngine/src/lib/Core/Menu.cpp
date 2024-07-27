@@ -3,11 +3,11 @@
 // =======================
 
 // External Includes
+#include <cstdio>
 
 // Internal Includes
 #include "CDEX/Core/Menu.h"
 #include "CDEX/Core/HubItem.h"
-#include <cstdio>
 
 // =====================
 // SECTION END: Includes
@@ -24,7 +24,8 @@
 // ==============================
 
 // ==== Constructor ====
-Menu::Menu(std::string initial_name) : HubItem(initial_name) {}
+Menu::Menu(std::string initial_name) : HubItem(initial_name) {
+}
 
 // ==== Destructor ====
 
@@ -43,7 +44,8 @@ void Menu::addOption(HubItem& new_item) {
 // =============
 
 void Menu::run() {
-    
+
+    printf("Menu: %s\n\n", this->getName().c_str());
 }
 
 void Menu::showMenu() {

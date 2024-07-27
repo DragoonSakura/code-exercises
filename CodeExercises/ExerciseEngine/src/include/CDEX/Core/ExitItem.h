@@ -5,7 +5,6 @@
 #pragma once
 
 // External Includes
-#include <vector>
 
 // Internal Includes
 #include "CDEX/Core/HubItem.h"
@@ -19,19 +18,18 @@
 // ==========================
 
 /*
-* @class A class for a single interactive menu
+* @class A menu item to handle program runtime
 *
-* A menu lists options avaialable.
-* It accepts input from the user and then directs them
-* to another menu or passes a task to be performed.
+* Tracks while the program is running.
+* Can be run to end the program.
 */
-class Menu : public HubItem {
+class ExitItem : public HubItem {
 
     // ================
     // Member Variables
     // ================
-private:
-    std::vector<HubItem> menu_options;
+
+    bool m_is_running;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -42,54 +40,48 @@ public:
     // ==== Constructor ====
 
     /*
-    * @brief Constructor for Menu
+    * @brief Constructor for ExitItem
     *
     * @param
     */
-    Menu(std::string initial_name);
+    ExitItem(std::string initial_name);
 
     // ==== Destructor ====
 
     /*
-    * @brief Constructor for Menu
+    * @brief Constructor for ExitItem
     *
     * @param
     */
-    ~Menu();
+    ~ExitItem();
 
     // =====================
     // Getter/Setter Methods
     // =====================
 
     /*
-    * @brief Add an option to the menu
+    * @brief Get status of whether the program is running
     * 
-    * @param new_item The new HubItem being add to options
+    * @param item ItemDes_c
+    *
+    * @return True <=> The 
+    */
+    bool getRunStatus();
+
+    /*
+    * @brief Change the running status of LessonHub
+    * 
+    * @param new_status true=> program now running, false => close program
     *
     * @return void
     */
-    void addOption(HubItem& new_item);
+    void setRunStatus(bool new_status);
 
     // =============
     // Other Methods
     // =============
 
-    /*
-    * @brief Runs the Menu and prepares options and input handling
-    *
-    * @return void
-    */
     void run();
-
-    /*
-    * @brief List all the menu options with input number
-    *
-    * @return void (prints to console)
-    */
-    void showMenu();
-
-
-    void runOption(int choice);
 
 };
 

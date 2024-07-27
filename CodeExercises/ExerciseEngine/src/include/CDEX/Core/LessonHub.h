@@ -72,9 +72,9 @@ public:
     // =============
 
     /*
-    * @brief Starts the Lesson hub and loads the initial lesson
+    * @brief Runs the LessonHub and launches the initial menu
     *
-    * @return void (prints to console)
+    * @return void
     */
     void run();
 
