@@ -1,6 +1,5 @@
 bin-int/ExerciseEngine/Debug/LessonFile.o: \
   ExerciseEngine/src/lib/Core/LessonFile.cpp \
-  ExerciseEngine/src/include/CDEX/Core/LessonFile.h \
   ExerciseEngine/src/include/CDEX/Core/HubItem.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -126,9 +125,8 @@ bin-int/ExerciseEngine/Debug/LessonFile.o: \
   /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/charconv.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc
-
-ExerciseEngine/src/include/CDEX/Core/LessonFile.h:
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc \
+  ExerciseEngine/src/include/CDEX/Core/LessonFile.h
 
 ExerciseEngine/src/include/CDEX/Core/HubItem.h:
 
@@ -401,3 +399,5 @@ ExerciseEngine/src/include/CDEX/Core/HubItem.h:
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/charconv.h:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc:
+
+ExerciseEngine/src/include/CDEX/Core/LessonFile.h:

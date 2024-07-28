@@ -23,7 +23,7 @@
 // ==============================
 
 // ==== Constructor ====
-ExitItem::ExitItem(std::string initial_name) : HubItem(initial_name), m_is_running(true) {}
+ExitItem::ExitItem() : HubItem("exit"), m_is_running(true) {}
 
 // ==== Destructor ====
 

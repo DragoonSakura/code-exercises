@@ -44,7 +44,7 @@ public:
     *
     * @param
     */
-    ExitItem(std::string initial_name);
+    ExitItem();
 
     // ==== Destructor ====
 

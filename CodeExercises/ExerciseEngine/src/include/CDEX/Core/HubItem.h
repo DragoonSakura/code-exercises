@@ -29,6 +29,8 @@ class HubItem {
     // Member Variables
     // ================
 
+protected:
+
     std::string name;
 
     // ==============================
