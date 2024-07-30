@@ -8,6 +8,7 @@
 
 // Internal Includes
 #include "CDEX/Core/HubItem.h"
+#include "CDEX/Core/Menu.h"
 
 // =====================
 // SECTION END: Includes
@@ -18,43 +19,48 @@
 // ==========================
 
 /*
-* @class Returns to a previous menu
+* @class HubItem to return to the start menu
 */
-class ReturnItem : public HubItem {
+class HomeItem : public HubItem {
 
     // ================
     // Member Variables
     // ================
 
+    Menu* m_start_menu;
+
     // ==============================
     // Constructor/Destructor Methods
     // ==============================
 
-public:
-
     // ==== Constructor ====
 
     /*
-    * @brief Constructor for ReturnItem
+    * @brief Constructor for HomeItem
     *
     * @param
     */
-    ReturnItem();
+    HomeItem();
 
     // ==== Destructor ====
 
     /*
-    * @brief Constructor for ReturnItem
+    * @brief Constructor for HomeItem
     *
     * @param
     */
-    ~ReturnItem();
+    ~HomeItem();
 
     // =============
     // Other Methods
     // =============
 
-    void run() {}
+    /*
+    * @brief Returns the User to the starting menu
+    *
+    * @return void
+    */
+    void run();
 
 };
 

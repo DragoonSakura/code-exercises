@@ -5,8 +5,7 @@
 // External Includes
 
 // Internal Includes
-#include "CDEX/Core/HubItem.h"
-#include "CDEX/Core/ExitItem.h"
+#include "CDEX/Core/HomeItem.h"
 
 // =====================
 // SECTION END: Includes
@@ -16,41 +15,28 @@
 // SECTION START: START CLASS
 // ==========================
 
-// ==== SECTION START: (CLASS) ExitItem ====
+// ==== SECTION START: (CLASS) HomeItem ====
 
 // ==============================
 // Constructor/Destructor Methods
 // ==============================
 
 // ==== Constructor ====
-ExitItem::ExitItem() : HubItem("Exit"), m_is_running(true) {}
+HomeItem::HomeItem() : HubItem("Home") {}
 
 // ==== Destructor ====
 
-ExitItem::~ExitItem() {}
-
-// =====================
-// Getter/Setter Methods
-// =====================
-
-bool ExitItem::getRunStatus() {
-    return this->m_is_running;
-}
-
-void ExitItem::setRunStatus(bool new_status) {
-    this->m_is_running = false;
-}
+HomeItem::~HomeItem() {}
 
 // =============
 // Other Methods
 // =============
 
-void ExitItem::run() {
-    printf("LessonHub is now exiting");
-    this->setRunStatus(false);
+void HomeItem::run() {
+
 }
 
-// ==== SECTION END: (CLASS) ExitItem ====
+// ==== SECTION END: (CLASS) HomeItem ====
 
 // ========================
 // SECTION START: END CLASS

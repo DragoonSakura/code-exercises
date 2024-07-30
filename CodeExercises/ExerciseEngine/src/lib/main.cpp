@@ -14,7 +14,7 @@
 
 int main (int argc, char *argv[]) {
 
-    LessonHub* main_hub = new LessonHub();
+    LessonHub* main_hub = LessonHub::init();
 
     main_hub->run();
 

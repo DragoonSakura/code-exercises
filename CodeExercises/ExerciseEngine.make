@@ -82,7 +82,9 @@ endif
 
 OBJECTS := \
 	$(OBJDIR)/ExitItem.o \
+	$(OBJDIR)/HomeItem.o \
 	$(OBJDIR)/HubItem.o \
+	$(OBJDIR)/HubManager.o \
 	$(OBJDIR)/LessonFile.o \
 	$(OBJDIR)/LessonHub.o \
 	$(OBJDIR)/Menu.o \
@@ -151,7 +153,13 @@ endif
 $(OBJDIR)/ExitItem.o: ExerciseEngine/src/lib/Core/ExitItem.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/HomeItem.o: ExerciseEngine/src/lib/Core/HomeItem.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/HubItem.o: ExerciseEngine/src/lib/Core/HubItem.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/HubManager.o: ExerciseEngine/src/lib/Core/HubManager.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/LessonFile.o: ExerciseEngine/src/lib/Core/LessonFile.cpp

@@ -11,11 +11,201 @@
       "-std=c++17",
       "-c",
       "-o",
+      "bin-int/ExerciseEngine/Debug/ExitItem.o",
+      "ExerciseEngine/src/lib/Core/ExitItem.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/ExitItem.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/ExitItem.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/HomeItem.o",
+      "ExerciseEngine/src/lib/Core/HomeItem.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/HomeItem.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/HomeItem.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/HubItem.o",
+      "ExerciseEngine/src/lib/Core/HubItem.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/HubItem.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/HubItem.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/HubManager.o",
+      "ExerciseEngine/src/lib/Core/HubManager.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/HubManager.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/HubManager.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/LessonFile.o",
+      "ExerciseEngine/src/lib/Core/LessonFile.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/LessonFile.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/LessonFile.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
       "bin-int/ExerciseEngine/Debug/LessonHub.o",
       "ExerciseEngine/src/lib/Core/LessonHub.cpp"
     ],
     "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
     "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/LessonHub.cpp",
     "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/LessonHub.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/Menu.o",
+      "ExerciseEngine/src/lib/Core/Menu.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/Menu.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/Menu.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/ReturnItem.o",
+      "ExerciseEngine/src/lib/Core/ReturnItem.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/ReturnItem.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/ReturnItem.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/Solution.o",
+      "ExerciseEngine/src/lib/Core/Solution.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Core/Solution.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/Solution.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/01_duplicate_integer.o",
+      "ExerciseEngine/src/lib/NeetCodeExercises/01-arrays-and-hashing/01_duplicate_integer.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/NeetCodeExercises/01-arrays-and-hashing/01_duplicate_integer.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/01_duplicate_integer.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
+      "bin-int/ExerciseEngine/Debug/main.o",
+      "ExerciseEngine/src/lib/main.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/main.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/main.o"
   }
 ]

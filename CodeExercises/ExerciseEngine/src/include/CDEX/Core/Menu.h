@@ -31,7 +31,7 @@ class Menu : public HubItem {
     // Member Variables
     // ================
 private:
-    std::vector<HubItem> menu_options;
+    std::vector<HubItem*> menu_options;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -68,7 +68,7 @@ public:
     *
     * @return void
     */
-    void addOption(HubItem& new_item);
+    void addOption(HubItem* new_item);
 
     // =============
     // Other Methods

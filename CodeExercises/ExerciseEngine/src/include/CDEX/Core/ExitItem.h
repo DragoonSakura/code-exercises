@@ -41,8 +41,6 @@ public:
 
     /*
     * @brief Constructor for ExitItem
-    *
-    * @param
     */
     ExitItem();
 
@@ -50,8 +48,6 @@ public:
 
     /*
     * @brief Constructor for ExitItem
-    *
-    * @param
     */
     ~ExitItem();
 
@@ -81,6 +77,11 @@ public:
     // Other Methods
     // =============
 
+    /*
+    * @brief Sets the running state to false
+    *
+    * @return void
+    */
     void run();
 
 };
