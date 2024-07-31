@@ -24,10 +24,31 @@
 // ==============================
 
 // ==== Constructor ====
-HubItem::HubItem(std::string initial_name) : name(initial_name) {}
+HubItem::HubItem(std::string initial_name) : name(initial_name) {
+    this->return_item = nullptr;
+}
 
 std::string HubItem::getName() {
     return this->name;
+}
+
+// ==== Desctructor  ====
+
+HubItem::~HubItem() {
+    this->return_item = nullptr;
+}
+
+// =====================
+// Getter/Setter Methods
+// =====================
+
+
+HubItem* HubItem::getReturnItem() {
+    return this->return_item;
+}
+
+void HubItem::setReturnItem(HubItem* new_return_item) {
+    this->return_item = new_return_item;
 }
 
 // ==== SECTION END: (CLASS) HubItem ====

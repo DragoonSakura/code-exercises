@@ -54,6 +54,14 @@ class LessonFile : public HubItem {
     // Other Methods
     // =============
 
+    /*
+    * @brief Shows the options to view different aspects of the Lesson.
+    */
+    void display();
+
+    /*
+    * @brief Runs the core feature of the HubItem (Usually given Input)
+    */
     void run();
 
 };

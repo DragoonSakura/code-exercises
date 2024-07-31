@@ -33,6 +33,11 @@ LessonFile::~LessonFile() {}
 // Other Methods
 // =============
 
+
+void LessonFile::display() {
+
+}
+
 void LessonFile::run() {
 
 }

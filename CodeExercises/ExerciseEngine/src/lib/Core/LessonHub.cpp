@@ -94,10 +94,13 @@ void LessonHub::handleCommand() {
     std::string user_command = this->getInput();
 
     bool valid_command = false;
+
     while (!valid_command) {
+
         // We assume the command is valid and set back to false if it ends up invalid
         // Honeslty mostly so we don't need to keep setting it to true in each success case
         valid_command = true;
+
         if ( user_command == "e" || user_command == "exit" || attempts >= 5) {
             this->setRunStatus(false);
         }

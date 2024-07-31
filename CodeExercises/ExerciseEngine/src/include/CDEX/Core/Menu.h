@@ -62,6 +62,15 @@ public:
     // =====================
 
     /*
+    * @brief Gets the menu explanation message for the user
+    *
+    * @param item ItemDes_c
+    *
+    * @return   
+    */
+    void getMessage();
+
+    /*
     * @brief Add an option to the menu
     * 
     * @param new_item The new HubItem being add to options
@@ -73,6 +82,11 @@ public:
     // =============
     // Other Methods
     // =============
+
+    /*
+    * @brief Shows the options available from the current menu
+    */
+    void display();
 
     /*
     * @brief Runs the Menu and prepares options and input handling

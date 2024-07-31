@@ -43,13 +43,19 @@ void Menu::addOption(HubItem* new_item) {
 // Other Methods
 // =============
 
+void Menu::display() {
+    
+}
+
 void Menu::run() {
 
     printf("Menu: %s\n\n", this->getName().c_str());
 }
 
 void Menu::showMenu() {
+
     std::string option_name;
+
     for (int index = 0; index < this->menu_options.size(); index++) {
         option_name = this->menu_options[index]->getName();
         // We add to index to start options from number 1 onwards
