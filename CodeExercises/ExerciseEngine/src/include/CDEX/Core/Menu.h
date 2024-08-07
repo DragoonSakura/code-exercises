@@ -31,7 +31,7 @@ class Menu : public HubItem {
     // Member Variables
     // ================
 private:
-    std::vector<HubItem*> menu_options;
+    std::vector<HubItem*> m_menu_items;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -44,7 +44,7 @@ public:
     /*
     * @brief Constructor for Menu
     *
-    * @param
+    * @param initial_name The name of the menu
     */
     Menu(std::string initial_name);
 
@@ -63,10 +63,6 @@ public:
 
     /*
     * @brief Gets the menu explanation message for the user
-    *
-    * @param item ItemDes_c
-    *
-    * @return   
     */
     void getMessage();
 
@@ -77,7 +73,7 @@ public:
     *
     * @return void
     */
-    void addOption(HubItem* new_item);
+    void addItem(HubItem* new_item);
 
     // =============
     // Other Methods
@@ -88,6 +84,28 @@ public:
     */
     void display();
 
+
+    /*
+    * @brief Check if the command string is a valid option in the menu
+    *
+    * Failure case:
+    * - Item not on menu
+    * - Item not valid (Not a positive int string)
+    *
+    * @param command The command string to run
+    *
+    * @return True <=> valid command
+    */
+    bool validCommand(std::string command);
+
+    /*
+    * @brief Get the item at the given option number
+    *
+    * @param item_num The listed option number for the item
+    *
+    * @return The Hub item at the option
+    */
+    HubItem* getItem(int item_num);
     /*
     * @brief Runs the Menu and prepares options and input handling
     *

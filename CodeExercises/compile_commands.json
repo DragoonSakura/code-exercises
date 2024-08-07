@@ -182,6 +182,25 @@
       "-std=c++17",
       "-c",
       "-o",
+      "bin-int/ExerciseEngine/Debug/neetcode.o",
+      "ExerciseEngine/src/lib/Modules/neetcode.cpp"
+    ],
+    "directory": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises",
+    "file": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/ExerciseEngine/src/lib/Modules/neetcode.cpp",
+    "output": "/home/draciel/main/dev/learnDev/code-exercises/CodeExercises/bin-int/ExerciseEngine/Debug/neetcode.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang++",
+      "-DCDEX_PLATFORM_LINUX",
+      "-DCDEX_DEBUG",
+      "-IExerciseEngine/src",
+      "-IExerciseEngine/src/include",
+      "-m64",
+      "-g",
+      "-std=c++17",
+      "-c",
+      "-o",
       "bin-int/ExerciseEngine/Debug/01_duplicate_integer.o",
       "ExerciseEngine/src/lib/NeetCodeExercises/01-arrays-and-hashing/01_duplicate_integer.cpp"
     ],

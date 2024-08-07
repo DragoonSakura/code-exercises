@@ -176,7 +176,6 @@ bin-int/ExerciseEngine/Debug/main.o: ExerciseEngine/src/lib/main.cpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/istream.tcc \
-  ExerciseEngine/src/include/CDEX/Core/HomeItem.h \
   ExerciseEngine/src/include/CDEX/Core/HubItem.h \
   ExerciseEngine/src/include/CDEX/Core/Menu.h
 
@@ -557,8 +556,6 @@ ExerciseEngine/src/include/CDEX/Core/LessonHub.h:
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/istream:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/istream.tcc:
-
-ExerciseEngine/src/include/CDEX/Core/HomeItem.h:
 
 ExerciseEngine/src/include/CDEX/Core/HubItem.h:
 

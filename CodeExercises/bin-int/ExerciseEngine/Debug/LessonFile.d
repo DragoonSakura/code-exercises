@@ -126,6 +126,11 @@ bin-int/ExerciseEngine/Debug/LessonFile.o: \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/vector \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_uninitialized.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_vector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_bvector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/vector.tcc \
   ExerciseEngine/src/include/CDEX/Core/LessonFile.h
 
 ExerciseEngine/src/include/CDEX/Core/HubItem.h:
@@ -399,5 +404,15 @@ ExerciseEngine/src/include/CDEX/Core/HubItem.h:
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/charconv.h:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/vector:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_uninitialized.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_vector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_bvector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/vector.tcc:
 
 ExerciseEngine/src/include/CDEX/Core/LessonFile.h:

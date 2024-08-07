@@ -90,6 +90,7 @@ OBJECTS := \
 	$(OBJDIR)/Menu.o \
 	$(OBJDIR)/ReturnItem.o \
 	$(OBJDIR)/Solution.o \
+	$(OBJDIR)/neetcode.o \
 	$(OBJDIR)/01_duplicate_integer.o \
 	$(OBJDIR)/main.o \
 
@@ -177,7 +178,10 @@ $(OBJDIR)/ReturnItem.o: ExerciseEngine/src/lib/Core/ReturnItem.cpp
 $(OBJDIR)/Solution.o: ExerciseEngine/src/lib/Core/Solution.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
-$(OBJDIR)/01_duplicate_integer.o: ExerciseEngine/src/lib/NeetCodeExercises/01-arrays-and-hashing/01_duplicate_integer.cpp
+$(OBJDIR)/neetcode.o: ExerciseEngine/src/lib/Modules/neetcode.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/01_duplicate_integer.o: ExerciseEngine/src/lib/NeetCodeExercises/arraysAndHashing/01_duplicate_integer.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/main.o: ExerciseEngine/src/lib/main.cpp

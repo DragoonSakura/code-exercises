@@ -4,6 +4,7 @@
 
 // External Includes
 #include <cstdio>
+#include <iostream>
 
 // Internal Includes
 #include "CDEX/Core/HubItem.h"
@@ -29,14 +30,46 @@ Menu::Menu(std::string initial_name) : HubItem(initial_name) {
 
 // ==== Destructor ====
 
-Menu::~Menu() {}
+Menu::~Menu() {
+
+    // We essentially want to guarantee:
+    // (1) All menus trace back to a single "start menu"
+    // (2) All menus have only one menu that leads to it
+    // (3) We only need to call the desctructor for the "start menu"
+    // (The start menu then clear other menus in a glorious cascade fufufu)
+    for (int i=0; i < this->m_menu_items.size(); i++) {
+        delete this->m_menu_items[i];
+    }
+    // Now we worry about actually cleaning up this menu
+    this->m_menu_items.clear();
+
+}
 
 // =====================
 // Getter/Setter Methods
 // =====================
 
-void Menu::addOption(HubItem* new_item) {
-    menu_options.push_back(std::move(new_item));
+/**/
+HubItem* Menu::getItem(int item_num) {
+
+    // The menu options list starts at item 1
+    int item_index = (item_num - 1);
+    if (item_index >= 0 && item_index < this->m_menu_items.size()) {
+        return this->m_menu_items[item_num - 1];
+    }
+    else { return nullptr; }
+}
+
+void Menu::addItem(HubItem* new_item) {
+    if (new_item->getReturnItem() != nullptr) {
+        std::cout << "The item is already attached" << std::endl;
+        std::cout << new_item->getReturnItem() << std::endl;
+        // std::cout << "Return Item Name: " << new_item->getReturnItem()->getName() << std::endl;
+    } else {
+        std::cout << "Item has been attached" << std::endl;
+        new_item->setReturnItem(this);
+        m_menu_items.push_back(std::move(new_item));
+    }
 }
 
 // =============
@@ -44,7 +77,31 @@ void Menu::addOption(HubItem* new_item) {
 // =============
 
 void Menu::display() {
-    
+
+    this->showMenu();
+
+    std::string item_name;
+
+    for (int i = 0; i < this->m_menu_items.size(); i++) {
+        item_name = this->m_menu_items[i]->getName().c_str();
+        // (Reason for i+1): We want to start options at 1
+        // Want to show index to call comamnd
+        std::cout << "(" << (i+1) << ") " << item_name << std::endl;
+    } 
+    // For nicer spacing
+    std::cout << std::endl;
+
+}
+
+bool Menu::validCommand(std::string command) {
+
+    int command_int = this->commandToInt(command);
+
+    if (command_int > 0 && command_int <= this->m_menu_items.size()) {
+        return true;
+    }
+    else { return false; }
+
 }
 
 void Menu::run() {
@@ -53,22 +110,15 @@ void Menu::run() {
 }
 
 void Menu::showMenu() {
-
-    std::string option_name;
-
-    for (int index = 0; index < this->menu_options.size(); index++) {
-        option_name = this->menu_options[index]->getName();
-        // We add to index to start options from number 1 onwards
-        printf("%d: %s", (index+1), option_name.c_str());
-    }
+    printf("Menu: %s\n\n", this->getName().c_str());
 }
 
 void Menu::runOption(int choice) {
-    if (choice < this->menu_options.size()) {
+    if (choice < this->m_menu_items.size()) {
         printf("%d is not an available option", choice);
     }
     else {
-        this->menu_options[choice]->run();
+        this->m_menu_items[choice]->run();
     }
 }
 

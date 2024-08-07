@@ -1,6 +1,6 @@
 bin-int/ExerciseEngine/Debug/HubItem.o: \
   ExerciseEngine/src/lib/Core/HubItem.cpp \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdio \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/features.h /usr/include/features-time64.h \
@@ -12,9 +12,11 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/pstl/pstl_config.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/stddef.h \
+  /usr/lib/llvm-14/lib/clang/14.0.6/include/__stddef_max_align_t.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdio \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/lib/llvm-14/lib/clang/14.0.6/include/stddef.h \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/stdarg.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -29,6 +31,18 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/stdexcept \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/exception \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_ptr.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_defines.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/typeinfo \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/hash_bytes.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/new \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/move.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/type_traits \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/nested_exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stringfwd.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/memoryfwd.h \
@@ -40,7 +54,6 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/type_traits \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdint \
   /usr/lib/llvm-14/lib/clang/14.0.6/include/stdint.h \
   /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
@@ -48,11 +61,7 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/allocator.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/new_allocator.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/new \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/functexcept.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_defines.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/move.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/cpp_type_traits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/localefwd.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
@@ -89,7 +98,6 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_construct.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string_view \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/functional_hash.h \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/hash_bytes.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/string_view.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/ext/string_conversions.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdlib \
@@ -124,9 +132,14 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc \
-  ExerciseEngine/src/include/CDEX/Core/HubItem.h
+  ExerciseEngine/src/include/CDEX/Core/HubItem.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/vector \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_uninitialized.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_vector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_bvector.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/vector.tcc
 
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdio:
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstddef:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h:
 
@@ -154,11 +167,15 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/pstl/pstl_config.h:
 
+/usr/lib/llvm-14/lib/clang/14.0.6/include/stddef.h:
+
+/usr/lib/llvm-14/lib/clang/14.0.6/include/__stddef_max_align_t.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdio:
+
 /usr/include/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/lib/llvm-14/lib/clang/14.0.6/include/stddef.h:
 
 /usr/lib/llvm-14/lib/clang/14.0.6/include/stdarg.h:
 
@@ -188,6 +205,30 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/stdexcept:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/exception:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_ptr.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_defines.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/cxxabi_init_exception.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/typeinfo:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/hash_bytes.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/new:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/move.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/type_traits:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/nested_exception.h:
+
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stringfwd.h:
@@ -212,8 +253,6 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/type_traits:
-
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdint:
 
 /usr/lib/llvm-14/lib/clang/14.0.6/include/stdint.h:
@@ -230,15 +269,7 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/new_allocator.h:
 
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/new:
-
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception.h:
-
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/functexcept.h:
-
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/exception_defines.h:
-
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/move.h:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/cpp_type_traits.h:
 
@@ -315,8 +346,6 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string_view:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/functional_hash.h:
-
-/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/hash_bytes.h:
 
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/string_view.tcc:
 
@@ -397,3 +426,13 @@ bin-int/ExerciseEngine/Debug/HubItem.o: \
 /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/basic_string.tcc:
 
 ExerciseEngine/src/include/CDEX/Core/HubItem.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/vector:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_uninitialized.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_vector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_bvector.h:
+
+/usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/vector.tcc:

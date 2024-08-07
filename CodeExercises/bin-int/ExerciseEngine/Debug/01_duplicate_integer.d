@@ -1,5 +1,5 @@
 bin-int/ExerciseEngine/Debug/01_duplicate_integer.o: \
-  ExerciseEngine/src/lib/NeetCodeExercises/01-arrays-and-hashing/01_duplicate_integer.cpp \
+  ExerciseEngine/src/lib/NeetCodeExercises/arraysAndHashing/01_duplicate_integer.cpp \
   /usr/include/stdio.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h /usr/include/features-time64.h \

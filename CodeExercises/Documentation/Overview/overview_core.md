@@ -20,31 +20,37 @@ These provide the main functionality for the UI, lesson loading and interaction.
 ## Index
 
 - [Class](#classes)
-    * [LessonHub](#lesson-hub)
+    * [LessonHub](#lessonhub)
     * [HubItem](#hub-item)
         + [Menu](#menu)
-        + [LessonFile](#lesson-file)
-        + [ReturnItem](#return-item)
-        + [ExitItem](#exit-item)
+        + [LessonFile](#lessonfile)
 - [Non-Class Header Only](#non-class-header-only)
 - [Non-Class C++ Only](#non-class-c-only)
 - [Other](#other)
 
-### Classes
+## Classes
 
-<a name="lesson-hub">LessonHub</a>
+### LessonHub
+
+- Has:
+    * An initial menu to interface with (see: [Menus](#menu))
+- Duties:
+    * Allow returning to initial menu
+    * Allow returning to a previous item
+    * Handle user input
+
 ```
 LessonHub
 ├-Desc          =>  The main class to connect all UI and IO features
 ├-Inheritance   =>  None
-├-Compositions  =>  None
+├-Compositions  =>  HubItems
 ├-Flags         =>  None
 └-Notes         =>  None
 ```
 
 [(Return to Index)](#index)
 
-<a name="hub-item">HubItem</a>
+#### HubItem
 ```
 HubItem
 ├-Desc          =>  Abstract class to define Hub related items like menus and lessons
@@ -56,46 +62,51 @@ HubItem
 
 [(Return to Index)](#index)
 
-<a name="menu">Menu</a>
+##### Menu
+
+- A menu is linked to hub items
+- A Hubitem can be reached from a single unique menu
+- All Manus trace back to a single initial menu
+- Duties:
+    * List the child HubItems
+    * Handle commands to go to child HubItems
+
 ```
 Menu
 ├-Desc          =>  A class for a Single UI Menu to be displayed with options and handle the options
 ├-Inheritance   =>  HubItem
-├-Compositions  =>  HomeItem, ReturnItem, ExitItem
+├-Compositions  =>  HubItem
 ├-Flags         =>  None
 └-Notes         =>  None
 ```
 
 [(Return to Index)](#index)
 
-<a name="lesson-file">LessonFile</a>
+##### LessonFile
 
-[(Return to Index)](#index)
+> [!Note]
+> Requires the Archive directory with the txt files
 
-<a name="return-item">ReturnItem</a>
-
-[(Return to Index)](#index)
-
-<a name="exit-item">ExitItem</a>
 ```
-ExitItem
-├-Desc          =>  Controls the runtime of the program and exiting
+LessonFile
+├-Desc          =>  Controls the UI for a single Lesson
 ├-Inheritance   =>  HubItem
 ├-Compositions  =>  None
 ├-Flags         =>  None
-└-Notes         =>  ExtiItem::run() ends the program
+└-Notes         =>  None
 ```
 
 [(Return to Index)](#index)
+- [LessonFile](#)
 
-### Non-Class header Only
-
-[(Return to Index)](#index)
-
-### Non-Class C++ Only
+## Non-Class header Only
 
 [(Return to Index)](#index)
 
-### Non-Class
+## Non-Class C++ Only
+
+[(Return to Index)](#index)
+
+## Other
 
 [(Return to Index)](#index)

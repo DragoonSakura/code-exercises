@@ -9,7 +9,6 @@
 #include <iostream>
 
 // Internal Includes
-#include "CDEX/Core/HomeItem.h"
 #include "CDEX/Core/HubItem.h"
 #include "CDEX/Core/Menu.h"
 
@@ -36,9 +35,6 @@ private:
     Menu* m_home_menu;
     HubItem* m_current_item;
     bool m_is_running;
-
-public:
-    HomeItem* home_menu;
 
     // ==============================
     // Constructor/Destructor Methods
@@ -89,17 +85,25 @@ public:
     * @brief Get the program running status
     * @return True <=> Lesson Hub is running
     */
-    bool getRunStatus() {
-        return this->m_is_running;
-    }
+    bool getRunStatus();
 
     /*
     * @brief Sets the running status of Lesson Hub (True <=> running)
     * @param new_status The running status we want to set to
     */
-    void setRunStatus(bool new_status) {
-        this->m_is_running = new_status;
-    }
+    void setRunStatus(bool new_status);
+
+    /*
+    * @brief Returns LessonHub to its home menu
+    */
+    void returnHome();
+
+    /*
+    * @brief Returns to the previous menu
+    *
+    * @return True <=> There was an ancestor and it was obtained
+    */
+    bool goToAncestorItem();
 
     /*
     * @brief Get the currently stored Hub Item
