@@ -82,6 +82,19 @@ public:
     // =====================
 
     /*
+    * @brief Returns the Instructions on how to use the Menus
+    *
+    * @return String with info
+    */
+    std::string getInfo();
+
+    /*
+    * @brief Shows a message to activate the help info
+    *
+    * @return A string with the help command
+    */
+    std::string getInfoMessage();
+    /*
     * @brief Get the program running status
     * @return True <=> Lesson Hub is running
     */

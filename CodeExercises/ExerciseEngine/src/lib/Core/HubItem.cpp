@@ -30,6 +30,7 @@
 /**/
 HubItem::HubItem(std::string initial_name) : name(initial_name) {
     this->return_item = nullptr;
+    this->message = "";
 }
 
 // ==== Desctructor  ====
@@ -39,6 +40,7 @@ HubItem::~HubItem() {
     // Deletion is handled separately
     this->return_item = nullptr;
     this->name = nullptr;
+    this->message = nullptr;
 }
 
 // =====================
@@ -50,8 +52,12 @@ std::string HubItem::getName() {
     return this->name;
 }
 
-void getItemMessage() {
+std::string HubItem::getItemMessage() {
+    return this->message;
+}
 
+void HubItem::setItemMessage(std::string new_message) {
+    this->message = new_message;
 }
 
 HubItem* HubItem::getReturnItem() {

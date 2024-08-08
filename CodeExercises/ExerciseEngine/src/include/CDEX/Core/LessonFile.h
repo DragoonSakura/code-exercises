@@ -27,6 +27,7 @@ class LessonFile : public HubItem {
     // ================
 
     std::string files_dir;
+    std::string lesson_dir;
 
     // ==============================
     // Constructor/Destructor Methods

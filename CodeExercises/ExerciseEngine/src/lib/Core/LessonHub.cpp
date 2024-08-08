@@ -48,6 +48,10 @@ LessonHub* LessonHub::init() {
 
     LessonHub* new_hub = new LessonHub();
 
+    std::string home_massage = "This is the Home Menu of the Lesson Hub.\n"
+        "You can choose a collection of lessons from the list below to explore\n"
+        "the lessons in that collection.";
+    new_hub->m_home_menu->setItemMessage(home_massage);
     new_hub->m_home_menu->addItem(CDEX::createNeetMenu());
 
     return new_hub;
@@ -101,6 +105,21 @@ void LessonHub::setCurrentItem(HubItem* new_item) {
 // Other Methods
 // =============
 
+/**/
+std::string LessonHub::getInfo() {
+    return "You can use the follow commands:\n"
+    "\tYou can type the number (and press enter) listed to the left of an option to select it\n"
+    "\th or home to return to the home menu\n"
+    "\tr or return to return to the previous menu\n"
+    "\tc or clear => Clear and refresh the current menu\n"
+    "\t? or help => Bring up this help menu\n"
+    "\te or exit => Exit the Lesson Hub\n\n";
+}
+
+std::string LessonHub::getInfoMessage() {
+    return "(Type ? or help to bring up the help menu.)\n\n";
+}
+
 std::string LessonHub::getInput() {
 
     std::string user_command;
@@ -123,6 +142,7 @@ void LessonHub::handleCommand() {
 
     HubItem* current_item = this->getCurrentItem();
     current_item->display();
+    std::cout << this->getInfoMessage() << std::endl;
 
     std::string user_command;
 
@@ -158,6 +178,14 @@ void LessonHub::handleCommand() {
             else {
                 this->returnHome();
             }
+        }
+        else if (user_command == "?" || user_command == "help") {
+            std::cout << this->getInfo() << std::endl;
+            // If a command succeeds it refreshes the terminal
+            // We don't want running help to refresh everything
+            valid_command = false;
+            // We don't want the help command consuming an input opportunity
+            attempts -= 1;
         }
         else if (user_command == "c" || user_command == "clear") {
             system("clear");

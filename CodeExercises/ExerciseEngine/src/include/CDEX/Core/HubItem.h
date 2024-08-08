@@ -74,7 +74,7 @@ public:
     /*
     * @brief Display the item message (if any) in the terminal
     */
-    void getItemMessage();
+    std::string getItemMessage();
 
     /*
     * @brief Get the item that this Menu was entered from
@@ -90,7 +90,7 @@ public:
     *
     * @param new_message The string with the Menu display message
     */
-    std::string setItemMessage(std::string new_message);
+    void setItemMessage(std::string new_message);
 
     /*
     * @brief Runs a HubItem retrieval command (for inherited classes)

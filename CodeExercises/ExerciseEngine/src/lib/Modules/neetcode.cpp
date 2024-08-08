@@ -13,6 +13,11 @@ namespace CDEX {
 
         Menu* neet_menu = new Menu("Neet Code Exercises");
 
+        std::string neet_message = "This is a collection of exercises from Neet Code.\n"
+    "(Link as of August 2024: https://neetcode.io)\n\n"
+    "The Exercises here should be listed roughly in order (they branch, so hard to represent).\n"
+    "Enjoy!";
+
         return neet_menu;
     }
 

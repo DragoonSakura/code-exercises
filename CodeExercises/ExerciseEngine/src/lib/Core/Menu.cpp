@@ -111,6 +111,11 @@ void Menu::run() {
 
 void Menu::showMenu() {
     printf("Menu: %s\n\n", this->getName().c_str());
+
+    std::string menu_message = this->getItemMessage();
+    if (menu_message != "") {
+        printf("%s\n\n", menu_message.c_str());
+    }
 }
 
 void Menu::runOption(int choice) {
@@ -121,6 +126,8 @@ void Menu::runOption(int choice) {
         this->m_menu_items[choice]->run();
     }
 }
+
+void Menu::something() {}
 
 // ==== SECTION END: (CLASS) Menu ====
 
