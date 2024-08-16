@@ -128,8 +128,6 @@ void Menu::runOption(int choice) {
     }
 }
 
-void Menu::something() {}
-
 // ==== SECTION END: (CLASS) Menu ====
 
 // ========================
