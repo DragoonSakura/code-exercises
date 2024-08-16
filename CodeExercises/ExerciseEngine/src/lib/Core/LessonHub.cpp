@@ -38,7 +38,11 @@ LessonHub::LessonHub() {
 
 // ==== Destructor ====
 
-LessonHub::~LessonHub() {}
+LessonHub::~LessonHub() {
+    this->m_current_item = nullptr;
+    delete this->m_home_menu;
+    this->mv_menu_options.clear();
+}
 
 // =========================
 // Creation/Shutdown Methods
@@ -117,7 +121,7 @@ std::string LessonHub::getInfo() {
 }
 
 std::string LessonHub::getInfoMessage() {
-    return "(Type ? or help to bring up the help menu.)\n\n";
+    return "(Type ? or help to bring up the help menu).\n\n";
 }
 
 std::string LessonHub::getInput() {
@@ -194,6 +198,12 @@ void LessonHub::handleCommand() {
             if (!this->goToAncestorItem()) {
                 valid_command = false;
             }
+        }
+        else if (user_command == "t" || user_command == "tree") {
+
+        }
+        else if (user_command == "s" || user_command == "subtree") {
+
         }
         else if (current_item->validCommand(user_command)) {
 

@@ -18,5 +18,7 @@ int main (int argc, char *argv[]) {
 
     main_hub->run();
 
+    delete main_hub;
+
     return 0;
 }

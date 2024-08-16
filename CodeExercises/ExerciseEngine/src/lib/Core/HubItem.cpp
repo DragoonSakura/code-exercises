@@ -39,8 +39,6 @@ HubItem::~HubItem() {
     // We simply want to "disconnect" from the ancestor menu
     // Deletion is handled separately
     this->return_item = nullptr;
-    this->name = nullptr;
-    this->message = nullptr;
 }
 
 // =====================

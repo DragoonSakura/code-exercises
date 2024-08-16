@@ -37,11 +37,12 @@ Menu::~Menu() {
     // (2) All menus have only one menu that leads to it
     // (3) We only need to call the desctructor for the "start menu"
     // (The start menu then clear other menus in a glorious cascade fufufu)
-    for (int i=0; i < this->m_menu_items.size(); i++) {
-        delete this->m_menu_items[i];
+    for ( HubItem* item : this->m_menu_items) {
+        delete item;
     }
     // Now we worry about actually cleaning up this menu
     this->m_menu_items.clear();
+    std::cout << "Menu: " << this->getName() << " is destroyed" << std::endl;
 
 }
 

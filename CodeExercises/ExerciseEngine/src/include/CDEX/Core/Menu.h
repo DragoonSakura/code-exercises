@@ -106,6 +106,7 @@ public:
     * @return The Hub item at the option
     */
     HubItem* getItem(int item_num);
+
     /*
     * @brief Runs the Menu and prepares options and input handling
     *
@@ -122,7 +123,6 @@ public:
 
 
     void runOption(int choice);
-    void something();
 
 };
 
